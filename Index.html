@@ -101,5 +101,52 @@
                 </div>
                 <div>
                 <label>Saída</label>
+                <input type="time" id="hora">
+                </div>
+            <div>
+              <label>Parada 1</label>
+              <input id="p1">
+            </div>
+            <div>
+              <label>Parada 2</label>
+              <input id="p2">
+            </div>
+            <div>
+              <label>Parada 3</label>
+              <input id="p3">
+            </div>
+            <div>
+              <label>Destino</label>
+              <input id="desino">
+            </div>
+            <br>
+            <button class="salvar" onclick"salvar()">Salvar Rotas</button>
+          </div>
+          <br>
+          <div class="card">
+            <input id="pesquisa" placeholder="Pesquisar..." onkeup="listar()">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rota</th>
+                  <th>Motorista</th>
+                  <th>Veículo</th>
+                  <th>Horário</th>
+                  <th>Percurso</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbory id="tabela">
+            </table>
+          </div>
+        </div>
+        <script>
+          let rotas = JSON.parse(localStorage.getltem("rotas")) || [];
+          let editarIndece = -1;
+          function salbar(){
+            let rota=document.getElementByld("rotas").value;
+            let motorista=document.getElementByld("motorista").value;
+        </script>
+          
                 
       </body>
