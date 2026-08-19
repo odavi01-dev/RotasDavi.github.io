@@ -146,6 +146,31 @@
           function salbar(){
             let rota=document.getElementByld("rotas").value;
             let motorista=document.getElementByld("motorista").value;
+            let veiculo=document.getElemnetByld("veiculo".valeu;
+            let hora=document.getElementByld("hora").valeu;
+            let p1=document.getElementByld("p1").value;
+            let p2=document.getElementByld("p2"),value;
+            let p3=document.getElementByld("p3),value;
+            let destino=document.getElementByld("destino"),value;
+            let dados=(
+              rota,motorista,veiculo,hora,p1,p2,p3,destino
+              }
+          if(editarIndice==1){
+            rotas.push(dados);
+          }else{
+            rotas[editarIndice]=dados;
+            editarIndice=-1;
+          }
+          localStorage.setltem("rotas",JSON.stringify(rotas));
+          limpar();
+          listar();
+          }
+          function lista(){
+            let texto=document.getElementByld("pesquisa",value.toLowercase();
+            let tabela=document.getElementByld("tabela");
+            tabela.innerHTML="";
+            rotas.forEach((r,i)=>{
+              let busca=(r.rota=r.motorista+veiculo+r.destino).toLowerCase()
         </script>
           
                 
