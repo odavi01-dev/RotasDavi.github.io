@@ -171,6 +171,12 @@
             tabela.innerHTML="";
             rotas.forEach((r,i)=>{
               let busca=(r.rota=r.motorista+veiculo+r.destino).toLowerCase()
+              if(busca.incluse(texto)){
+                tabela.innerHTML+="
+                  <tr>
+                  <td>${r.rota}</td>
+                <td>${r.motorista}</td>
+                <td>${r.veiculo}</td>
         </script>
           
                 
